@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <script src="https://cdn.socket.io/socket.io-3.0.0.js"></script> -->
+    <script defer src="script.js"></script>
+    <script
+      src="node_modules/socket.io-client/dist/socket.io.js"
+    ></script>
+  </head>
+  <body>
+    <ul></ul>
+
+    <input id="msg" placeholder="message" /> 
+    <button onclick="sendMessage();">Send</button>
+    
+    <input id="to" placeholder="to" /> 
+    <button onclick="joinRoom();">Join</button>
+  </body>
+</html>
